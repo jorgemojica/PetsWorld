@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.edu.ufps.petsworld">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logopet"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetsWorld">
+        <activity android:name=".Administrator.MainMenuActivity"/>
+        <activity android:name=".SignInActivity"/>
+        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".Administrator.DisplayedMenuActivity"/>
+        <activity android:name=".Administrator.VeterinariosActivity"/>
+        <activity android:name=".Customer.AlertasActivity"/>
+        <activity android:name=".Administrator.ClientesActivity"/>
+        <activity android:name=".Administrator.MascotasActivity"/>
+        <activity android:name=".Administrator.RecordatoriosActivity"/>
+        <activity android:name=".Administrator.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

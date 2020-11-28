@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "702056013907",
+    "firebase_url": "https://petsworld-95b72.firebaseio.com",
+    "project_id": "petsworld-95b72",
+    "storage_bucket": "petsworld-95b72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702056013907:android:55094e09dd1486ef2266a6",
+        "android_client_info": {
+          "package_name": "co.edu.ufps.petsworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702056013907-1r6ada021u3h3c6i68e6ifo4gncp1clv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6VLiBCDezVfJsnVYxt4o811PSIK5oPbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702056013907-1r6ada021u3h3c6i68e6ifo4gncp1clv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
