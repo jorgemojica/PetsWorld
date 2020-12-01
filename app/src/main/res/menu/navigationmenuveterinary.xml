@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/citas" android:icon="@drawable/ic_baseline_pending_actions_24" android:title="Citas"/>
+        <item android:id="@+id/nomenclaturas" android:icon="@drawable/ic_baseline_menu_book_24" android:title="Nomenclaturas"/>
+        <item android:id="@+id/clientes" android:icon="@drawable/ic_baseline_people_alt_24" android:title="Clientes"/>
+        <item android:id="@+id/pacientes" android:icon="@drawable/ic_baseline_pets_24" android:title="Pacientes"/>
+        <item android:id="@+id/novedades" android:icon="@drawable/ic_baseline_fiber_new_24" android:title="Novedades"/>
+        <item android:id="@+id/chat" android:icon="@drawable/ic_baseline_chat_24" android:title="Chat"/>
+        <item android:id="@+id/historial" android:icon="@drawable/ic_baseline_history_edu_24" android:title="Historial"/>
+        <item android:id="@+id/info" android:icon="@drawable/ic_baseline_info_24" android:title="Info"/>
+        <item android:id="@+id/miperfil" android:icon="@drawable/ic_baseline_account_circle_24" android:title="Mi Perfil"/>
+    </group>
+
+</menu>

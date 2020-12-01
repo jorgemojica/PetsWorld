@@ -17,8 +17,11 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import com.google.firebase.auth.FirebaseUser;
 
+import co.edu.ufps.petsworld.Customer.DisplayedMenuCustActivity;
 import co.edu.ufps.petsworld.R;
 import co.edu.ufps.petsworld.SignUpActivity;
+import co.edu.ufps.petsworld.Veterinary.DisplayedMenuVetActivity;
+import co.edu.ufps.petsworld.Veterinary.MainMenuVeterinaryActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,7 +65,15 @@ public class MainActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(MainActivity.this, "Authentication success.",
                                     Toast.LENGTH_SHORT).show();
-                            goMainMenu();
+                            if(email.equals("jorgeandresmv@ufps.edu.co")){
+                                goMainMenuAdministrator();
+                            }
+                            if(email.equals("jesusalfredorv@ufps.edu.co")){
+                                goMainMenuVeterinary();
+                            }
+                            if(email.equals("camiloandreshm@ufps.edu.co")){
+                                goMainMenuCustomer();
+                            }
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -76,8 +87,18 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void goMainMenu(){
-        Intent intent = new Intent(this, MainMenuActivity.class);
+    private void goMainMenuAdministrator(){
+        Intent intent = new Intent(this, DisplayedMenuAdminActivity.class);
+        startActivity(intent);
+    }
+
+    private void goMainMenuVeterinary(){
+        Intent intent = new Intent(this, DisplayedMenuVetActivity.class);
+        startActivity(intent);
+    }
+
+    private void goMainMenuCustomer(){
+        Intent intent = new Intent(this, DisplayedMenuCustActivity.class);
         startActivity(intent);
     }
 

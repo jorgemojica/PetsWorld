@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/siguenos"
+            android:layout_gravity="center"
+            android:textColor="@color/ColorPrimary"
+            android:textSize="75px"
+            android:layout_marginBottom="25px"/>
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logopet"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="249dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/signin" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_gravity="center">
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="1">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/instagram"
+                    android:backgroundTint="#80FFFFFF"/>
+            </GridLayout>
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="2">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/facebook"
+                    android:backgroundTint="#80FFFFFF"/>
+            </GridLayout>
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="2">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/twitter"
+                    android:backgroundTint="#80FFFFFF"/>
+            </GridLayout>
+
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="2">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/whatsapp"
+                    android:backgroundTint="#80FFFFFF"/>
+            </GridLayout>
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

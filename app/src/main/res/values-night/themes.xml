@@ -4,6 +4,6 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/ColorPrimary</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/ColorSecondary</item>m>
+        <item name="colorSecondary">@color/ColorSecondary</item>
     </style>
 </resources>

@@ -11,15 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PetsWorld">
-        <activity android:name=".Administrator.MainMenuActivity"/>
         <activity android:name=".SignInActivity"/>
         <activity android:name=".SignUpActivity"/>
-        <activity android:name=".Administrator.DisplayedMenuActivity"/>
+        <activity android:name=".Administrator.MainMenuAdministratorActivity"/>
+        <activity android:name=".Administrator.CitasActivity"/>
+        <activity android:name=".Administrator.DisplayedMenuAdminActivity"/>
+        <activity android:name=".Administrator.InfoActivity"/>
+        <activity android:name=".Administrator.NovedadesActivity"/>
         <activity android:name=".Administrator.VeterinariosActivity"/>
-        <activity android:name=".Customer.AlertasActivity"/>
         <activity android:name=".Administrator.ClientesActivity"/>
         <activity android:name=".Administrator.MascotasActivity"/>
         <activity android:name=".Administrator.RecordatoriosActivity"/>
+        <activity android:name=".Veterinary.MainMenuVeterinaryActivity"/>
+        <activity android:name=".Veterinary.HistorialActivity"/>
+        <activity android:name=".Customer.AlertasActivity"/>
         <activity android:name=".Administrator.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
