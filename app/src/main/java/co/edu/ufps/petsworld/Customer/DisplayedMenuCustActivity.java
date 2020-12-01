@@ -33,7 +33,7 @@ public class DisplayedMenuCustActivity extends AppCompatActivity implements Navi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.displayedmenuadministrator);
+        setContentView(R.layout.displayedmenucustomer);
 
         btnCitas = findViewById(R.id.btnCitas);
         btnCitas.setOnClickListener(new View.OnClickListener() {

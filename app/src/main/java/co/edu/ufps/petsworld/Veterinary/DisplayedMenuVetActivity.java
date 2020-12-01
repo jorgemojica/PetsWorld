@@ -33,7 +33,7 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.displayedmenuadministrator);
+        setContentView(R.layout.displayedmenuveterinary);
 
         btnCitas = findViewById(R.id.btnCitas);
         btnCitas.setOnClickListener(new View.OnClickListener() {
