@@ -58,36 +58,55 @@
                     />
 
                     <LinearLayout
-                            android:layout_width="199dp"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
                         <!-- Title, secondary and supporting text -->
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/client_name"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/client_name"
+                            android:textSize="70px"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/client_id"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
-
-                                tools:text="Identificacion"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/clientid"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"/>
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/client_mail"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
-                                tools:text="Correo"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/client_mail"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/client_tel"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/client_pet"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/client_addres"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"/>
                     </LinearLayout>
 
                 </LinearLayout>

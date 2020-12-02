@@ -16,6 +16,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
+import co.edu.ufps.petsworld.Administrator.ChatActivity;
 import co.edu.ufps.petsworld.Administrator.CitasActivity;
 import co.edu.ufps.petsworld.Administrator.ClientesActivity;
 import co.edu.ufps.petsworld.Administrator.InfoActivity;
@@ -28,7 +29,7 @@ import co.edu.ufps.petsworld.R;
 public class DisplayedMenuCustActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener{
 
     private DrawerLayout drawerLayout;
-    ImageButton btnCitas, btnNotificaciones, btnMascotas, btnNovedades;
+    ImageButton btnCitas, btnNotificaciones, btnMascotas, btnNovedades, btnChat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +68,13 @@ public class DisplayedMenuCustActivity extends AppCompatActivity implements Navi
             }
         });
 
-
+        btnChat = findViewById(R.id.btnChat);
+        btnChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goChat();
+            }
+        });
 
         Toolbar toolbar = findViewById(R.id.toolbar);
 
@@ -117,7 +124,10 @@ public class DisplayedMenuCustActivity extends AppCompatActivity implements Navi
         startActivity(intent);
     }
 
-
+    private void goChat(){
+        Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public void onBackPressed() {

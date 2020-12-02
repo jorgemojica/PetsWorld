@@ -18,7 +18,7 @@ import co.edu.ufps.petsworld.R;
 public class DisplayedMenuAdminActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener{
 
     private DrawerLayout drawerLayout;
-    ImageButton btnCitas, btnVeterinary, btnCustomers, btnMascotas, btnNovedades, btnReminders, btnInfo;
+    ImageButton btnCitas, btnVeterinary, btnCustomers, btnMascotas, btnNovedades, btnChat, btnReminders, btnInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +65,13 @@ public class DisplayedMenuAdminActivity extends AppCompatActivity implements Nav
             }
         });
 
-
+        btnChat = findViewById(R.id.btnChat);
+        btnChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goChat();
+            }
+        });
 
         btnReminders = findViewById(R.id.btnReminders);
         btnReminders.setOnClickListener(new View.OnClickListener() {
@@ -136,7 +142,10 @@ public class DisplayedMenuAdminActivity extends AppCompatActivity implements Nav
         startActivity(intent);
     }
 
-
+    private void goChat(){
+        Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
 
     private void goReminders(){
         Intent intent = new Intent(this, RecordatoriosActivity.class);

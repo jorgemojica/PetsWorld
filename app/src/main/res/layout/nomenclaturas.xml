@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomenclaturas"
+        android:layout_gravity="center"
+        android:textColor="@color/ColorPrimary"
+        android:gravity="center"
+        android:textSize="80px"
+        android:layout_marginBottom="100px"
+        android:layout_marginTop="50px"/>
+
+    <TableRow
+        android:layout_width="1080px"
+        android:gravity="center">
+        <TextView
+            android:text="Frecuencia de Administración"
+            android:background="@color/ColorPrimary"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:padding="3dip"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Significado"
+            android:background="@color/ColorPrimary"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="Abreviatura"
+            android:background="@color/ColorPrimary"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="QD"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="1 vez al día"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="BID"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="2 veces al día"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="TID"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="3 veces al día"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="100px">
+        <TextView
+            android:text="QID"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="4 veces al día"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow
+        android:layout_width="1080px"
+        android:gravity="center">
+        <TextView
+            android:text="Vías de Administración"
+            android:background="@color/ColorPrimary"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:padding="3dip"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Significado"
+            android:background="@color/ColorPrimary"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="Abreviatura"
+            android:background="@color/ColorPrimary"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="EV"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="Endovenoso"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="EVL"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="Endovenoso Lento"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="IM"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="Intramuscular"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="SC"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="Subcutáneo"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="PC"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="Oral"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="IC"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+        <TextView
+            android:text="Intracardiaco"
+            android:background="@color/ColorSecondary"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="3dip" />
+    </TableRow>
+</TableLayout>

@@ -37,80 +37,81 @@
             <!-- Scrollable content -->
 
             <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp">
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
 
                 <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:background="@color/Card">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/Card">
 
                     <!-- Media -->
 
                     <ImageView
-                            android:layout_width="166dp"
-                            android:layout_height="213dp"
-                            app:srcCompat="@drawable/perfil_veterinario"
-                            android:scaleType="centerCrop"
-                            android:contentDescription="@string/content_description_media"
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/perfil_veterinario"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/content_description_media"
                     />
                     <LinearLayout
-                            android:layout_width="202dp"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
                         <!-- Title, secondary and supporting text -->
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/veterinario_name"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/veterinario_name"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/cc_veterinario"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/cc_veterinario"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
 
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/tel_veterinario"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/tel_veterinario"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/mail_veterinario"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/mail_veterinario"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/consultorio"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/consultorio"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:text="@string/especialidad"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/especialidad"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
 
                     </LinearLayout>

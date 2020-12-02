@@ -51,58 +51,60 @@
                     <!-- Media -->
                     <ImageView
                             android:layout_width="166dp"
-                            android:layout_height="194dp"
-                            app:srcCompat="@drawable/perfil_pet"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/persa"
                             android:scaleType="centerCrop"
                             android:contentDescription="@string/content_description_media"
                     />
 
                     <LinearLayout
-                            android:layout_width="199dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:padding="16dp">
 
                         <!-- Title, secondary and supporting text -->
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/pet_name"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pet_name"
+                            android:textSize="70px"
+                            android:layout_gravity="center"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/raza"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/raza"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
 
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/sexo"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/sexo"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/edad"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/edad"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:text="@string/dueño_mascota"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/dueño_mascota"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
 
                     </LinearLayout>

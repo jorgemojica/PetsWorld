@@ -59,35 +59,36 @@
 
                         <!-- Title, secondary and supporting text -->
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/name_alert"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_alert"
+                            android:textSize="80px"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="@color/TitleBar"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/alert_asunto"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/alert_asunto"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/alert_date"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/alert_date"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
-                        />
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:text="@string/alert_name_pet"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/alert_name_pet"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
 
                     </LinearLayout>

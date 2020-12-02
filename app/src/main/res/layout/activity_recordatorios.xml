@@ -51,42 +51,43 @@
                     <!-- Media -->
 
                     <ImageView
-                            android:layout_width="166dp"
-                            android:layout_height="match_parent"
-                            app:srcCompat="@drawable/ic_event_white_48dp"
-                            android:scaleType="centerCrop"
-                            android:contentDescription="@string/content_description_media"
-                            tools:ignore="VectorDrawableCompat"/>
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_event_white_48dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/content_description_media"
+                        tools:ignore="VectorDrawableCompat"/>
                     <LinearLayout
-                            android:layout_width="202dp"
+                            android:layout_width="208dp"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:padding="16dp">
 
                         <!-- Title, secondary and supporting text -->
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/name_event"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_event"
+                            android:gravity="center"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="@color/TitleBar"
                         />
 
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="@string/hora_evento"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/hora_evento"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:text="@string/alarm_event"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="@color/TitleBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/alarm_event"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/TitleBar"
                         />
 
                     </LinearLayout>

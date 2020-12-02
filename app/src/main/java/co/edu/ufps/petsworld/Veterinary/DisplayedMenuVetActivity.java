@@ -16,6 +16,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
+import co.edu.ufps.petsworld.Administrator.ChatActivity;
 import co.edu.ufps.petsworld.Administrator.CitasActivity;
 import co.edu.ufps.petsworld.Administrator.ClientesActivity;
 import co.edu.ufps.petsworld.Administrator.InfoActivity;
@@ -28,7 +29,7 @@ import co.edu.ufps.petsworld.R;
 public class DisplayedMenuVetActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener{
 
     private DrawerLayout drawerLayout;
-    ImageButton btnCitas, btnCustomers, btnPacientes, btnNovedades, btnHistorial, btnInfo;
+    ImageButton btnCitas, btnCustomers, btnPacientes, btnNovedades, btnChat, btnHistorial, btnInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +68,13 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
             }
         });
 
-
+        btnChat = findViewById(R.id.btnChat);
+        btnChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goChat();
+            }
+        });
 
         btnHistorial = findViewById(R.id.btnHistorial);
         btnHistorial.setOnClickListener(new View.OnClickListener() {
@@ -133,7 +140,10 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
         startActivity(intent);
     }
 
-
+    private void goChat(){
+        Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
 
     private void goHistorial(){
         Intent intent = new Intent(this, HistorialActivity.class);
