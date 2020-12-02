@@ -5,29 +5,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Administrator.ChatActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:textColor="@color/ColorPrimary"
+        android:textSize="80px"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="1100px"/>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/topAppBar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:title="@string/pagechat"
-                app:menu="@menu/top_app_bar"
-                app:titleTextColor="@color/TitleBar"
-                android:background="@color/colorAccent"
-                app:navigationIcon="@drawable/ic_menu_white_24dp"
-                style="@style/Widget.MaterialComponents.Toolbar.Primary"
-            />
-
-        </com.google.android.material.appbar.AppBarLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,7 +66,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="@string/alert_asunto"
+                            android:text="Hola. Recuerda que tienes cita a las 3:00 p.m. con Ruben."
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="@color/TitleBar"
                         />
@@ -110,7 +104,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="@string/alert_asunto"
+                            android:text="Hola Doctor. Si claro, muchas gracias."
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="@color/TitleBar"
                         />

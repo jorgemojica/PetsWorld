@@ -13,6 +13,7 @@
         android:theme="@style/Theme.PetsWorld">
         <activity android:name=".SignInActivity"/>
         <activity android:name=".SignUpActivity"/>
+        <activity android:name=".Administrator.ChatActivity"/>
         <activity android:name=".Administrator.CitasActivity"/>
         <activity android:name=".Administrator.ClientesActivity"/>
         <activity android:name=".Administrator.DisplayedMenuAdminActivity"/>
@@ -20,6 +21,7 @@
         <activity android:name=".Administrator.MainMenuAdministratorActivity"/>
         <activity android:name=".Administrator.MascotasActivity"/>
         <activity android:name=".Administrator.NovedadesActivity"/>
+        <activity android:name=".Administrator.PerfilAdministratorActivity"/>
         <activity android:name=".Administrator.RecordatoriosActivity"/>
         <activity android:name=".Administrator.VeterinariosActivity"/>
         <activity android:name=".Customer.AlertasActivity"/>
@@ -28,6 +30,7 @@
         <activity android:name=".Veterinary.DisplayedMenuVetActivity"/>
         <activity android:name=".Veterinary.HistorialActivity"/>
         <activity android:name=".Veterinary.MainMenuVeterinaryActivity"/>
+        <activity android:name=".Veterinary.NomenclaturasActivity"/>
         <activity android:name=".Administrator.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

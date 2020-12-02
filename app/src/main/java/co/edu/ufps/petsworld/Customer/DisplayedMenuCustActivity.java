@@ -22,6 +22,7 @@ import co.edu.ufps.petsworld.Administrator.ClientesActivity;
 import co.edu.ufps.petsworld.Administrator.InfoActivity;
 import co.edu.ufps.petsworld.Administrator.MascotasActivity;
 import co.edu.ufps.petsworld.Administrator.NovedadesActivity;
+import co.edu.ufps.petsworld.Administrator.PerfilAdministratorActivity;
 import co.edu.ufps.petsworld.Administrator.RecordatoriosActivity;
 import co.edu.ufps.petsworld.Administrator.VeterinariosActivity;
 import co.edu.ufps.petsworld.R;
@@ -29,7 +30,7 @@ import co.edu.ufps.petsworld.R;
 public class DisplayedMenuCustActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener{
 
     private DrawerLayout drawerLayout;
-    ImageButton btnCitas, btnNotificaciones, btnMascotas, btnNovedades, btnChat;
+    ImageButton btnCitas, btnNotificaciones, btnMascotas, btnNovedades, btnChat, btnPerfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,14 @@ public class DisplayedMenuCustActivity extends AppCompatActivity implements Navi
             @Override
             public void onClick(View v) {
                 goChat();
+            }
+        });
+
+        btnPerfil = findViewById(R.id.btnPerfil);
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goPerfil();
             }
         });
 
@@ -126,6 +135,11 @@ public class DisplayedMenuCustActivity extends AppCompatActivity implements Navi
 
     private void goChat(){
         Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
+
+    private void goPerfil(){
+        Intent intent = new Intent(this, PerfilAdministratorActivity.class);
         startActivity(intent);
     }
 

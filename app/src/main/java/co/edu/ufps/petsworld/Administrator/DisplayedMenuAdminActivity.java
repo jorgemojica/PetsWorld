@@ -18,7 +18,7 @@ import co.edu.ufps.petsworld.R;
 public class DisplayedMenuAdminActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener{
 
     private DrawerLayout drawerLayout;
-    ImageButton btnCitas, btnVeterinary, btnCustomers, btnMascotas, btnNovedades, btnChat, btnReminders, btnInfo;
+    ImageButton btnCitas, btnVeterinary, btnCustomers, btnMascotas, btnNovedades, btnChat, btnReminders, btnInfo, btnPerfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +89,14 @@ public class DisplayedMenuAdminActivity extends AppCompatActivity implements Nav
             }
         });
 
+        btnPerfil = findViewById(R.id.btnPerfil);
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goPerfil();
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -154,6 +162,11 @@ public class DisplayedMenuAdminActivity extends AppCompatActivity implements Nav
 
     private void goInfo(){
         Intent intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
+    }
+
+    private void goPerfil(){
+        Intent intent = new Intent(this, PerfilAdministratorActivity.class);
         startActivity(intent);
     }
 

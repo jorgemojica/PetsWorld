@@ -22,6 +22,7 @@ import co.edu.ufps.petsworld.Administrator.ClientesActivity;
 import co.edu.ufps.petsworld.Administrator.InfoActivity;
 import co.edu.ufps.petsworld.Administrator.MascotasActivity;
 import co.edu.ufps.petsworld.Administrator.NovedadesActivity;
+import co.edu.ufps.petsworld.Administrator.PerfilAdministratorActivity;
 import co.edu.ufps.petsworld.Administrator.RecordatoriosActivity;
 import co.edu.ufps.petsworld.Administrator.VeterinariosActivity;
 import co.edu.ufps.petsworld.R;
@@ -29,7 +30,7 @@ import co.edu.ufps.petsworld.R;
 public class DisplayedMenuVetActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener{
 
     private DrawerLayout drawerLayout;
-    ImageButton btnCitas, btnCustomers, btnPacientes, btnNovedades, btnChat, btnHistorial, btnInfo;
+    ImageButton btnCitas, btnNomenclaturas, btnCustomers, btnPacientes, btnNovedades, btnChat, btnHistorial, btnInfo, btnPerfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,14 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
             @Override
             public void onClick(View v) {
                 goCitas();
+            }
+        });
+
+        btnNomenclaturas = findViewById(R.id.btnNomenclaturas);
+        btnNomenclaturas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goNomenclaturas();
             }
         });
 
@@ -92,6 +101,14 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
             }
         });
 
+        btnPerfil = findViewById(R.id.btnPerfil);
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goPerfil();
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -125,6 +142,11 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
         startActivity(intent);
     }
 
+    private void goNomenclaturas(){
+        Intent intent = new Intent(this, NomenclaturasActivity.class);
+        startActivity(intent);
+    }
+
     private void goCustomers(){
         Intent intent = new Intent(this, ClientesActivity.class);
         startActivity(intent);
@@ -152,6 +174,11 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
 
     private void goInfo(){
         Intent intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
+    }
+
+    private void goPerfil(){
+        Intent intent = new Intent(this, PerfilAdministratorActivity.class);
         startActivity(intent);
     }
 
