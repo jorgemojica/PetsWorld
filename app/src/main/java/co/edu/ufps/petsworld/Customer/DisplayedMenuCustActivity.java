@@ -6,25 +6,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import com.google.android.material.navigation.NavigationView;
-
 import co.edu.ufps.petsworld.Administrator.ChatActivity;
 import co.edu.ufps.petsworld.Administrator.CitasActivity;
-import co.edu.ufps.petsworld.Administrator.ClientesActivity;
-import co.edu.ufps.petsworld.Administrator.InfoActivity;
 import co.edu.ufps.petsworld.Administrator.MascotasActivity;
 import co.edu.ufps.petsworld.Administrator.NovedadesActivity;
 import co.edu.ufps.petsworld.Administrator.PerfilAdministratorActivity;
-import co.edu.ufps.petsworld.Administrator.RecordatoriosActivity;
-import co.edu.ufps.petsworld.Administrator.VeterinariosActivity;
+import androidx.fragment.app.Fragment;
+
 import co.edu.ufps.petsworld.R;
 
 public class DisplayedMenuCustActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener{
@@ -154,52 +149,50 @@ public class DisplayedMenuCustActivity extends AppCompatActivity implements Navi
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-//        int title;
-//        switch (menuItem.getItemId()) {
-//            case R.id.citas:
-//                title = R.string.citasString;
-//                break;
-//            case R.id.veterinarios:
-//                title = R.string.veterinariosString;
-//                break;
-//            case R.id.clientes:
-//                title = R.string.clientesString;
-//                break;
-//            case R.id.mascotas:
-//                title = R.string.mascotasString;
-//                break;
-//            case R.id.novedades:
-//                title = R.string.novedadesString;
-//                break;
-//            case R.id.chat:
-//                title = R.string.chatString;
-//                break;
-//            case R.id.recordatorios:
-//                title = R.string.recordatoriosString;
-//                break;
-//            case R.id.info:
-//                title = R.string.infoString;
-//                break;
-//            case R.id.miperfil:
-//                title = R.string.miperfilString;
-//                break;
-//            default:
-//                throw new IllegalArgumentException("menu option not implemented!!");
-//        }
-//        Fragment fragment = DisplayedMenuAdminFragment.newInstance(getString(title));
-//        getSupportFragmentManager()
-//                .beginTransaction()
-//                .setCustomAnimations(R.anim.bottom_nav_enter, R.anim.bottom_nav_exit)
-//                .replace(R.id.home_content, fragment)
-//                .commit();
-//
-//        setTitle(getString(title));
-//
-//        drawerLayout.closeDrawer(GravityCompat.START);
-//
-//        return true;
-        
-        return false;
+        int title;
+        switch (menuItem.getItemId()) {
+            case R.id.citas:
+                title = R.string.citasString;
+                break;
+            case R.id.veterinarios:
+                title = R.string.veterinariosString;
+                break;
+            case R.id.clientes:
+                title = R.string.clientesString;
+                break;
+            case R.id.mascotas:
+                title = R.string.mascotasString;
+                break;
+            case R.id.novedades:
+                title = R.string.novedadesString;
+                break;
+            case R.id.chat:
+                title = R.string.chatString;
+                break;
+            case R.id.recordatorios:
+                title = R.string.recordatoriosString;
+                break;
+            case R.id.info:
+                title = R.string.infoString;
+                break;
+            case R.id.miperfil:
+                title = R.string.miperfilString;
+                break;
+            default:
+                throw new IllegalArgumentException("menu option not implemented!!");
+        }
+        Fragment fragment = DisplayedMenuCustFragment.newInstance(getString(title));
+        getSupportFragmentManager()
+                .beginTransaction()
+                .setCustomAnimations(R.anim.bottom_nav_enter, R.anim.bottom_nav_exit)
+                .replace(R.id.home_content, fragment)
+                .commit();
+
+        setTitle(getString(title));
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+
+        return true;
         
     }
 

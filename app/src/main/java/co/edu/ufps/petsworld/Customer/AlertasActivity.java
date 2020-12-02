@@ -6,11 +6,10 @@ import co.edu.ufps.petsworld.R;
 
 public class AlertasActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alertas);
     }
+
 }

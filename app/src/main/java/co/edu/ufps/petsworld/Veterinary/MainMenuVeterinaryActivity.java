@@ -17,7 +17,6 @@ public class MainMenuVeterinaryActivity extends AppCompatActivity {
 
     ImageButton btnCitas, btnCustomers, btnPacientes, btnNovedades, btnHistorial, btnInfo;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

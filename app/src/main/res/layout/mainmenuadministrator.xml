@@ -227,5 +227,4 @@
             </GridLayout>
         </GridLayout>
     </RelativeLayout>
-<!--    <include layout="@layout/displayedmenu"></include>-->
 </RelativeLayout>

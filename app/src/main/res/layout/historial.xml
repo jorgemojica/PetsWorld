@@ -147,14 +147,6 @@
                             android:textColor="@color/TitleBar"
                             />
                     </LinearLayout>
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="200dp"-->
-<!--                        app:srcCompat="@drawable/gato"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:layout_gravity="center"-->
-<!--                        android:contentDescription="@string/content_description_media"-->
-<!--                        tools:ignore="VectorDrawableCompat"/>-->
 
                 </LinearLayout>
 

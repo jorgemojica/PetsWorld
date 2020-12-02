@@ -11,4 +11,5 @@ public class RecordatoriosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recordatorios);
     }
+
 }

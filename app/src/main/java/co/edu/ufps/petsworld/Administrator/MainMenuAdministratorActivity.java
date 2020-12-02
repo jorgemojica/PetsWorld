@@ -56,8 +56,6 @@ public class MainMenuAdministratorActivity extends AppCompatActivity {
             }
         });
 
-
-
         btnReminders = findViewById(R.id.btnReminders);
         btnReminders.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,8 +71,6 @@ public class MainMenuAdministratorActivity extends AppCompatActivity {
                 goInfo();
             }
         });
-
-
 
     }
 
@@ -103,8 +99,6 @@ public class MainMenuAdministratorActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
     private void goReminders(){
         Intent intent = new Intent(this, RecordatoriosActivity.class);
         startActivity(intent);
@@ -114,7 +108,5 @@ public class MainMenuAdministratorActivity extends AppCompatActivity {
         Intent intent = new Intent(this, InfoActivity.class);
         startActivity(intent);
     }
-
-
 
 }
