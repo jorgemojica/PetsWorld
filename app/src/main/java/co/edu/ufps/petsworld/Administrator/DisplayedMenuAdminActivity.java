@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
+
+import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
@@ -182,46 +184,38 @@ public class DisplayedMenuAdminActivity extends AppCompatActivity implements Nav
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        int title;
+        int option;
         switch (menuItem.getItemId()) {
             case R.id.citas:
-                title = R.string.citasString;
+                option = R.layout.citas;
                 break;
             case R.id.veterinarios:
-                title = R.string.veterinariosString;
+                option = R.layout.activity_veterinarios;
                 break;
             case R.id.clientes:
-                title = R.string.clientesString;
+                option = R.layout.activity_clientes;
                 break;
             case R.id.mascotas:
-                title = R.string.mascotasString;
+                option = R.layout.activity_mascotas;
                 break;
             case R.id.novedades:
-                title = R.string.novedadesString;
+                option = R.layout.novedades;
                 break;
             case R.id.chat:
-                title = R.string.chatString;
+                option = R.layout.activity_chat;
                 break;
             case R.id.recordatorios:
-                title = R.string.recordatoriosString;
+                option = R.layout.activity_recordatorios;
                 break;
             case R.id.info:
-                title = R.string.infoString;
+                option = R.layout.info;
                 break;
             case R.id.miperfil:
-                title = R.string.miperfilString;
+                option = R.layout.perfil;
                 break;
             default:
                 throw new IllegalArgumentException("menu option not implemented!!");
         }
-        Fragment fragment = DisplayedMenuAdminFragment.newInstance(getString(title));
-        getSupportFragmentManager()
-                .beginTransaction()
-                .setCustomAnimations(R.anim.bottom_nav_enter, R.anim.bottom_nav_exit)
-                .replace(R.id.home_content, fragment)
-                .commit();
-
-        setTitle(getString(title));
 
         drawerLayout.closeDrawer(GravityCompat.START);
 

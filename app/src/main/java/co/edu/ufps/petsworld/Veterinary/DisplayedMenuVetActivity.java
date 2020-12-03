@@ -188,46 +188,38 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        int title;
+        int option;
         switch (menuItem.getItemId()) {
             case R.id.citas:
-                title = R.string.citasString;
+                option = R.layout.citas;
                 break;
-            case R.id.veterinarios:
-                title = R.string.veterinariosString;
+            case R.id.nomenclaturas:
+                option = R.layout.nomenclaturas;
                 break;
             case R.id.clientes:
-                title = R.string.clientesString;
+                option = R.layout.activity_clientes;
                 break;
-            case R.id.mascotas:
-                title = R.string.mascotasString;
+            case R.id.pacientes:
+                option = R.layout.activity_mascotas;
                 break;
             case R.id.novedades:
-                title = R.string.novedadesString;
+                option = R.layout.novedades;
                 break;
             case R.id.chat:
-                title = R.string.chatString;
+                option = R.layout.activity_chat;
                 break;
-            case R.id.recordatorios:
-                title = R.string.recordatoriosString;
+            case R.id.historial:
+                option = R.layout.historial;
                 break;
             case R.id.info:
-                title = R.string.infoString;
+                option = R.layout.info;
                 break;
             case R.id.miperfil:
-                title = R.string.miperfilString;
+                option = R.layout.perfil;
                 break;
             default:
                 throw new IllegalArgumentException("menu option not implemented!!");
         }
-        Fragment fragment = DisplayedMenuVetFragment.newInstance(getString(title));
-        getSupportFragmentManager()
-                .beginTransaction()
-                .setCustomAnimations(R.anim.bottom_nav_enter, R.anim.bottom_nav_exit)
-                .replace(R.id.home_content, fragment)
-                .commit();
-
-        setTitle(getString(title));
 
         drawerLayout.closeDrawer(GravityCompat.START);
 

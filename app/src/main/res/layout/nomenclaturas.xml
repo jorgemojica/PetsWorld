@@ -27,13 +27,13 @@
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Significado"
+            android:text="Abreviatura"
             android:background="@color/ColorPrimary"
             android:textColor="#FFF"
             android:gravity="center"
             android:padding="3dip" />
         <TextView
-            android:text="Abreviatura"
+            android:text="Significado"
             android:background="@color/ColorPrimary"
             android:textColor="#FFF"
             android:gravity="center"
@@ -108,13 +108,13 @@
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Significado"
+            android:text="Abreviatura"
             android:background="@color/ColorPrimary"
             android:textColor="#FFF"
             android:gravity="center"
             android:padding="3dip" />
         <TextView
-            android:text="Abreviatura"
+            android:text="Significado"
             android:background="@color/ColorPrimary"
             android:textColor="#FFF"
             android:gravity="center"

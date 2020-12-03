@@ -149,46 +149,29 @@ public class DisplayedMenuCustActivity extends AppCompatActivity implements Navi
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        int title;
+        int option;
         switch (menuItem.getItemId()) {
             case R.id.citas:
-                title = R.string.citasString;
+                option = R.layout.citas;
                 break;
-            case R.id.veterinarios:
-                title = R.string.veterinariosString;
-                break;
-            case R.id.clientes:
-                title = R.string.clientesString;
+            case R.id.notificaciones:
+                option = R.layout.activity_alertas;
                 break;
             case R.id.mascotas:
-                title = R.string.mascotasString;
+                option = R.layout.activity_mascotas;
                 break;
             case R.id.novedades:
-                title = R.string.novedadesString;
+                option = R.layout.novedades;
                 break;
             case R.id.chat:
-                title = R.string.chatString;
-                break;
-            case R.id.recordatorios:
-                title = R.string.recordatoriosString;
-                break;
-            case R.id.info:
-                title = R.string.infoString;
+                option = R.layout.activity_chat;
                 break;
             case R.id.miperfil:
-                title = R.string.miperfilString;
+                option = R.layout.perfil;
                 break;
             default:
                 throw new IllegalArgumentException("menu option not implemented!!");
         }
-        Fragment fragment = DisplayedMenuCustFragment.newInstance(getString(title));
-        getSupportFragmentManager()
-                .beginTransaction()
-                .setCustomAnimations(R.anim.bottom_nav_enter, R.anim.bottom_nav_exit)
-                .replace(R.id.home_content, fragment)
-                .commit();
-
-        setTitle(getString(title));
 
         drawerLayout.closeDrawer(GravityCompat.START);
 
