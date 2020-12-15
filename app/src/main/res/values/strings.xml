@@ -43,10 +43,10 @@
     <string name="content_description_search">Búsqueda</string>
     <string name="copyright">©PetsWorld</string>
     <string name="lema">Your Pets Ideal Choices</string>
-    <string name="Tommy">Tommy</string>
+    <string name="idCita">Cita N°001</string>
     <string name="edadAnimal">Edad: 3 años</string>
-    <string name="razaPerro">Raza: Golden Retriever</string>
-    <string name="propietario">Propietario: Carlos Ramirez</string>
+    <string name="idCliente">Cliente: Carlos Gomez</string>
+    <string name="idMascota">Mascota: Tommy</string>
     <string name="fechaPerro">Fecha: 30/11/2020</string>
     <string name="horaPerro">Hora: 8:00 a.m.</string>
     <string name="citas">Citas</string>

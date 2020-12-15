@@ -1,114 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardCitas"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Administrator.CitasActivity">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Citas"
-        android:textStyle="bold|italic"
-        android:layout_gravity="center"
-        android:textColor="@color/ColorPrimary"
-        android:textSize="80px"
-        android:layout_marginTop="100px"/>
-
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/Card">
 
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
+        <!-- Media -->
+        <ImageView
+            android:id="@+id/imagenMascota"
+            android:layout_width="166dp"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            app:srcCompat="@drawable/perro"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/content_description_media" />
 
-            <!-- Scrollable content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardCitas"
-                android:layout_width="match_parent"
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:id="@+id/idCita"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:text="@string/idCita"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/TitleBar"
+                />
+            <TextView
+                android:id="@+id/idCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/idCliente"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"/>
+            <TextView
+                android:id="@+id/idMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/idMascota"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"/>
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/fechaPerro"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"/>
+            <TextView
+                android:id="@+id/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/horaPerro"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"/>
+        </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@color/Card">
+    </LinearLayout>
 
-                    <!-- Media -->
-                    <ImageView
-                        android:layout_width="166dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/perro"
-                        android:scaleType="centerCrop"
-                        android:contentDescription="@string/content_description_media"
-                        />
+</com.google.android.material.card.MaterialCardView>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="16dp">
 
-                        <!-- Title, secondary and supporting text -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/Tommy"
-                            android:textAppearance="?attr/textAppearanceHeadline6"
-                            android:textColor="@color/TitleBar"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/razaPerro"
-                            android:textAppearance="?attr/textAppearanceBody2"
-                            android:textColor="@color/TitleBar"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/edadAnimal"
-                            android:textAppearance="?attr/textAppearanceBody2"
-                            android:textColor="@color/TitleBar"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/propietario"
-                            android:textAppearance="?attr/textAppearanceBody2"
-                            android:textColor="@color/TitleBar"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/fechaPerro"
-                            android:textAppearance="?attr/textAppearanceBody2"
-                            android:textColor="@color/TitleBar"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/horaPerro"
-                            android:textAppearance="?attr/textAppearanceBody2"
-                            android:textColor="@color/TitleBar"/>
-                    </LinearLayout>
 
-                </LinearLayout>
 
-            </com.google.android.material.card.MaterialCardView>
 
-        </androidx.core.widget.NestedScrollView>
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".Administrator.CitasActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Citas"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textColor="@color/ColorPrimary"-->
+<!--        android:textSize="80px"-->
+<!--        android:layout_marginTop="100px"/>-->
+
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--            &lt;!&ndash; Scrollable content &ndash;&gt;-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/cardCitas"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@color/Card">-->
+
+<!--                    &lt;!&ndash; Media &ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imagenMascota"-->
+<!--                        android:layout_width="166dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        app:srcCompat="@drawable/perro"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:contentDescription="@string/content_description_media"-->
+<!--                        />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="16dp">-->
+
+<!--                        &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/idCita"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:text="@string/idCita"-->
+<!--                            android:textAppearance="?attr/textAppearanceHeadline6"-->
+<!--                            android:textColor="@color/TitleBar"-->
+<!--                            />-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/idCliente"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:text="@string/idCliente"-->
+<!--                            android:textAppearance="?attr/textAppearanceBody2"-->
+<!--                            android:textColor="@color/TitleBar"/>-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/idMascota"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:text="@string/idMascota"-->
+<!--                            android:textAppearance="?attr/textAppearanceBody2"-->
+<!--                            android:textColor="@color/TitleBar"/>-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/fecha"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:text="@string/fechaPerro"-->
+<!--                            android:textAppearance="?attr/textAppearanceBody2"-->
+<!--                            android:textColor="@color/TitleBar"/>-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/hora"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:text="@string/horaPerro"-->
+<!--                            android:textAppearance="?attr/textAppearanceBody2"-->
+<!--                            android:textColor="@color/TitleBar"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+<!--</LinearLayout>-->
