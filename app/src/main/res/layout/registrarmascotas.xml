@@ -22,7 +22,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
-        android:text="Registro de Citas"
+        android:text="Registro de Mascotas"
         android:textColor="@color/ColorPrimary"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -32,11 +32,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/idCita"
+        <EditText android:id="@+id/idNombreMascota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Asunto de la Cita" />
+            android:hint="Nombre" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Identification Label -->
@@ -45,11 +45,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/idCliente"
+        <EditText android:id="@+id/idRazaMascota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Nombre del Cliente" />
+            android:hint="Raza" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Telephone Label -->
@@ -58,11 +58,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/idMascota"
+        <EditText android:id="@+id/idSexoMascota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Nombre de la Mascota" />
+            android:hint="Sexo" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Email Label -->
@@ -71,11 +71,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/fecha"
+        <EditText android:id="@+id/idEdadMascota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Fecha de la Cita (dd/mm/aaaa)" />
+            android:hint="Edad" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Password Label -->
@@ -84,11 +84,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/hora"
+        <EditText android:id="@+id/idPropietarioMascota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Hora de la Cita (hh:mm a.m./p.m.)" />
+            android:hint="Propietario" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Image Label -->
@@ -97,10 +97,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/imagenMascota"
+        <EditText android:id="@+id/idImagenMascota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Persian_in_Cat_Cafe.jpg/1200px-Persian_in_Cat_Cafe.jpg"/>
+            android:text="https://www.zooplus.es/magazine/wp-content/uploads/2018/08/maine-coon-3-768x658.jpg"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

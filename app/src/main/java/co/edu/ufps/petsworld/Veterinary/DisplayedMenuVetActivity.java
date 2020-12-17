@@ -19,7 +19,6 @@ import co.edu.ufps.petsworld.Administrator.InfoActivity;
 import co.edu.ufps.petsworld.Administrator.MascotasActivity;
 import co.edu.ufps.petsworld.Administrator.NovedadesActivity;
 import co.edu.ufps.petsworld.Administrator.PerfilAdministratorActivity;
-import androidx.fragment.app.Fragment;
 import co.edu.ufps.petsworld.R;
 
 public class DisplayedMenuVetActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener{
@@ -197,10 +196,10 @@ public class DisplayedMenuVetActivity extends AppCompatActivity implements Navig
                 option = R.layout.nomenclaturas;
                 break;
             case R.id.clientes:
-                option = R.layout.activity_clientes;
+                option = R.layout.clientes;
                 break;
             case R.id.pacientes:
-                option = R.layout.activity_mascotas;
+                option = R.layout.mascotas;
                 break;
             case R.id.novedades:
                 option = R.layout.novedades;

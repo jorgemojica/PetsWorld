@@ -47,8 +47,8 @@
     <string name="edadAnimal">Edad: 3 años</string>
     <string name="idCliente">Cliente: Carlos Gomez</string>
     <string name="idMascota">Mascota: Tommy</string>
-    <string name="fechaPerro">Fecha: 30/11/2020</string>
-    <string name="horaPerro">Hora: 8:00 a.m.</string>
+    <string name="fecha">Fecha: 30/11/2020</string>
+    <string name="hora">Hora: 8:00 a.m.</string>
     <string name="citas">Citas</string>
     <string name="siguenos">Siguenos</string>
     <string name="historial">Historial</string>

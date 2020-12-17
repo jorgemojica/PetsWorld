@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cardCitas"
+    android:id="@+id/cardMascotas"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp">
@@ -15,12 +15,13 @@
 
         <!-- Media -->
         <ImageView
-            android:id="@+id/imagenMascota"
+            android:id="@+id/idImagenMascota"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/perro"
+            app:srcCompat="@drawable/persa"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/content_description_media" />
+            android:contentDescription="@string/content_description_media"
+        />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,52 +31,55 @@
 
             <!-- Title, secondary and supporting text -->
             <TextView
-                android:id="@+id/idCita"
+                android:id="@+id/idNombreMascota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Tina"
+                android:textSize="70px"
                 android:layout_gravity="center"
-                android:text="@string/idCita"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textColor="@color/TitleBar" />
+                android:textColor="@color/TitleBar"
+            />
 
             <TextView
-                android:id="@+id/idMascota"
+                android:id="@+id/idRazaMascota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textSize="50px"
-                android:text="@string/idMascota"
+                android:text="@string/raza"
                 android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
+                android:textColor="@color/TitleBar"
+
+                />
 
             <TextView
-                android:id="@+id/idCliente"
+                android:id="@+id/idSexoMascota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textSize="50px"
-                android:text="@string/idCliente"
+                android:text="@string/sexo"
                 android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
+                android:textColor="@color/TitleBar"
+            />
+            <TextView
+                android:id="@+id/idEdadMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/edad"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"
+            />
+            <TextView
+                android:id="@+id/idPropietarioMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/dueño_mascota"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"
+            />
 
-            <TextView
-                android:id="@+id/fecha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:textSize="50px"
-                android:text="@string/fecha"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
-            <TextView
-                android:id="@+id/hora"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:textSize="50px"
-                android:text="@string/hora"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
         </LinearLayout>
 
     </LinearLayout>

@@ -2,26 +2,27 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cardCitas"
+    android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
         android:background="@color/Card">
 
         <!-- Media -->
+
         <ImageView
-            android:id="@+id/imagenMascota"
+            android:id="@+id/imagenVeterinario"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/perro"
+            app:srcCompat="@drawable/perfil_veterinario"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/content_description_media" />
-
+            android:contentDescription="@string/content_description_media"
+        />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,52 +31,61 @@
 
             <!-- Title, secondary and supporting text -->
             <TextView
-                android:id="@+id/idCita"
+                android:id="@+id/nombreVeterinario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/idCita"
+                android:text="@string/veterinario_name"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textColor="@color/TitleBar" />
+                android:textColor="@color/TitleBar"
+            />
+            <TextView
+                android:id="@+id/identificationVeterinario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/cc_veterinario"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"
 
+            />
             <TextView
-                android:id="@+id/idMascota"
+                android:id="@+id/telefonoVeterinario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textSize="50px"
-                android:text="@string/idMascota"
+                android:text="@string/tel_veterinario"
                 android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
+                android:textColor="@color/TitleBar"
+            />
+            <TextView
+                android:id="@+id/correoVeterinario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/mail_veterinario"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"
+            />
+            <TextView
+                android:id="@+id/numeroConsultorio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/consultorio"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"
+            />
+            <TextView
+                android:id="@+id/especialidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/especialidad"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"
+            />
 
-            <TextView
-                android:id="@+id/idCliente"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:textSize="50px"
-                android:text="@string/idCliente"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
-
-            <TextView
-                android:id="@+id/fecha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:textSize="50px"
-                android:text="@string/fecha"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
-            <TextView
-                android:id="@+id/hora"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:textSize="50px"
-                android:text="@string/hora"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
         </LinearLayout>
 
     </LinearLayout>

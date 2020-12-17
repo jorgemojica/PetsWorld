@@ -8,13 +8,11 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 
-import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 
 import co.edu.ufps.petsworld.R;
 
@@ -190,13 +188,13 @@ public class DisplayedMenuAdminActivity extends AppCompatActivity implements Nav
                 option = R.layout.citas;
                 break;
             case R.id.veterinarios:
-                option = R.layout.activity_veterinarios;
+                option = R.layout.veterinarios;
                 break;
             case R.id.clientes:
-                option = R.layout.activity_clientes;
+                option = R.layout.clientes;
                 break;
             case R.id.mascotas:
-                option = R.layout.activity_mascotas;
+                option = R.layout.mascotas;
                 break;
             case R.id.novedades:
                 option = R.layout.novedades;

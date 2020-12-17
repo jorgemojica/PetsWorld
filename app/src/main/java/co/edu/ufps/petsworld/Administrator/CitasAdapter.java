@@ -1,5 +1,4 @@
 package co.edu.ufps.petsworld.Administrator;
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,15 +13,11 @@ import co.edu.ufps.petsworld.R;
 
 public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHolder> {
 
-    private Context context;
     private ArrayList<Citas> citas;
-    private int cursor;
 
-    public CitasAdapter(Context context, ArrayList<Citas> citas, int cursor) {
+    public CitasAdapter(ArrayList<Citas> citas) {
 
-        this.context = context;
         this.citas = citas;
-        this.cursor = cursor;
 
     }
 

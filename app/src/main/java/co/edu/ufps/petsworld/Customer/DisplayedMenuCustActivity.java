@@ -18,7 +18,6 @@ import co.edu.ufps.petsworld.Administrator.CitasActivity;
 import co.edu.ufps.petsworld.Administrator.MascotasActivity;
 import co.edu.ufps.petsworld.Administrator.NovedadesActivity;
 import co.edu.ufps.petsworld.Administrator.PerfilAdministratorActivity;
-import androidx.fragment.app.Fragment;
 
 import co.edu.ufps.petsworld.R;
 
@@ -158,7 +157,7 @@ public class DisplayedMenuCustActivity extends AppCompatActivity implements Navi
                 option = R.layout.activity_alertas;
                 break;
             case R.id.mascotas:
-                option = R.layout.activity_mascotas;
+                option = R.layout.mascotas;
                 break;
             case R.id.novedades:
                 option = R.layout.novedades;

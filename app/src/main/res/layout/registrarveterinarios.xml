@@ -5,15 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingTop="20dp"
-    tools:context=".RegistrarCitasActivity">
+    tools:context=".RegistrarVeterinariosActivity">
 
     <ImageView
         android:layout_width="129dp"
         android:layout_height="128dp"
         android:layout_gravity="center"
-        android:layout_marginTop="-20px"
-        android:src="@drawable/logopet" />
+        android:layout_marginTop="50px"
+        android:src="@drawable/logopet"/>
 
     <TextView
         android:id="@+id/textTitle"
@@ -22,93 +21,102 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
-        android:text="Registro de Citas"
+        android:text="Registro de Veterinarios"
         android:textColor="@color/ColorPrimary"
         android:textSize="30sp"
         android:textStyle="bold" />
 
+    <!-- Name Label -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/idCita"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/idNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Asunto de la Cita" />
+            android:hint="Nombre" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sex Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/idSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Sexo" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Identification Label -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/idCliente"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/idIdentificacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Nombre del Cliente" />
+            android:hint="N° Identificación" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Telephone Label -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/idMascota"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/idTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Nombre de la Mascota" />
+            android:hint="Telefono" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Email Label -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/fecha"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/idCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Fecha de la Cita (dd/mm/aaaa)" />
+            android:hint="Correo" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Password Label -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/hora"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/idEspecialidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Hora de la Cita (hh:mm a.m./p.m.)" />
+            android:hint="Especialidad" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/idConsultorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Consultorio" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Image Label -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-        <EditText android:id="@+id/imagenMascota"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/imagenVeterinario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Persian_in_Cat_Cafe.jpg/1200px-Persian_in_Cat_Cafe.jpg"/>
+            android:text="https://www.crhoy.com/wp-content/uploads/2019/01/Captura-de-pantalla-2019-01-03-a-las-10.48.27.png"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnCrear"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
         android:text="Crear"
         android:background="@color/ColorPrimary"
         android:layout_gravity="center"/>
