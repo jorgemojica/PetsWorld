@@ -14,6 +14,7 @@
         <activity android:name=".RegistrarCitasActivity"/>
         <activity android:name=".RegistrarVeterinariosActivity"/>
         <activity android:name=".RegistrarMascotasActivity"/>
+        <activity android:name=".RegistrarClientesActivity"/>
         <activity android:name=".SignInActivity"/>
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".Administrator.ChatActivity"/>

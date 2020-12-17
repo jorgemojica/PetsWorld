@@ -1,11 +1,12 @@
 package co.edu.ufps.petsworld.Administrator;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -13,14 +14,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
-
+import co.edu.ufps.petsworld.Administrator.Model.Clientes;
 import co.edu.ufps.petsworld.R;
+import co.edu.ufps.petsworld.RegistrarClientesActivity;
 
 public class ClientesActivity extends AppCompatActivity {
 
     RecyclerView contenedorClientes;
     FloatingActionButton registrarClientes;
-    ClientesAdapter clientesAdapter;
+    ClienteAdapter clienteAdapter;
     private static final String TAG = "ClientesActivity";
 
     @Override
@@ -28,10 +30,10 @@ public class ClientesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clientes);
         contenedorClientes = findViewById(R.id.contenedorClientes);
-        clientesAdapter = new ClientesAdapter(cargarDatosFirebase());
+        clienteAdapter = new ClienteAdapter(cargarDatosFirebase());
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(ClientesActivity.this);
         contenedorClientes.setLayoutManager(layoutManager);
-        contenedorClientes.setAdapter(clientesAdapter);
+        contenedorClientes.setAdapter(clienteAdapter);
         registrarClientes = findViewById(R.id.registrarClientes);
         registrarClientes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,7 @@ public class ClientesActivity extends AppCompatActivity {
                 registrarClientes();
             }
         });
+
     }
 
     private void registrarClientes() {
@@ -65,7 +68,7 @@ public class ClientesActivity extends AppCompatActivity {
                     for (DataSnapshot data : dataSnapshot.getChildren()) {
                         Clientes cliente = data.getValue(Clientes.class);
                         clientes.add(cliente);
-                        clientesAdapter.notifyDataSetChanged();
+                        clienteAdapter.notifyDataSetChanged();
                     }
                     //Log.d(TAG, "Value is: ");
                 }

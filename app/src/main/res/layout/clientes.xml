@@ -37,7 +37,8 @@
                 android:text="@string/client_name"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 android:textColor="@color/TitleBar"
-                android:textSize="70px" />
+                android:textSize="70px"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/idIdentificacionCliente"
@@ -49,14 +50,6 @@
                 android:textColor="@color/TitleBar"/>
 
             <TextView
-                android:id="@+id/idCorreoCliente"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/client_mail"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/TitleBar"/>
-            <TextView
                 android:id="@+id/idTelefonoCliente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,14 +57,25 @@
                 android:text="@string/client_tel"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="@color/TitleBar"/>
+
             <TextView
-                android:id="@+id/idPropietarioMascota"
+                android:id="@+id/idCorreoCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/client_mail"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/TitleBar"/>
+
+            <TextView
+                android:id="@+id/idMascotaCliente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/client_pet"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="@color/TitleBar"/>
+
             <TextView
                 android:id="@+id/idDireccionCliente"
                 android:layout_width="wrap_content"
