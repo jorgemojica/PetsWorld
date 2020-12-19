@@ -12,9 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PetsWorld">
         <activity android:name=".RegistrarCitasActivity"/>
+        <activity android:name=".RegistrarClientesActivity"/>
         <activity android:name=".RegistrarVeterinariosActivity"/>
         <activity android:name=".RegistrarMascotasActivity"/>
-        <activity android:name=".RegistrarClientesActivity"/>
+        <activity android:name=".RegistrarRecordatoriosActivity"/>
         <activity android:name=".SignInActivity"/>
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".Administrator.ChatActivity"/>

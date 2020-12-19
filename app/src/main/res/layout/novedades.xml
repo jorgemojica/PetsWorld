@@ -69,17 +69,24 @@
                             android:textAppearance="?attr/textAppearanceHeadline6"
                             android:textColor="@color/TitleBar"
                             android:layout_marginBottom="20px"/>
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="@string/vermas"-->
+<!--                            android:textSize="45px"-->
+<!--                            android:textColor="@color/TitleBar"/>-->
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView1"
                             android:layout_height="wrap_content"
-                            android:text="@string/vermas"
-                            android:textSize="45px"
-                            android:textColor="@color/TitleBar"/>
-                        <View
-                            android:layout_width="80dp"
-                            android:layout_height="1dp"
-                            android:backgroundTint="@color/TitleBar"
-                            android:background="#000" />
+                            android:layout_width="wrap_content"
+                            android:text="Ver más: https://petsboss.wordpress.com/2017/06/24/plan-de-vacunas-de-mi-perro/"
+                            android:autoLink="web">
+                        </TextView>
+<!--                        <View-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:backgroundTint="@color/TitleBar"-->
+<!--                            android:background="#000" />-->
                     </LinearLayout>
 
                 </LinearLayout>

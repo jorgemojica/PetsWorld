@@ -203,7 +203,7 @@ public class DisplayedMenuAdminActivity extends AppCompatActivity implements Nav
                 option = R.layout.activity_chat;
                 break;
             case R.id.recordatorios:
-                option = R.layout.activity_recordatorios;
+                option = R.layout.recordatorios;
                 break;
             case R.id.info:
                 option = R.layout.info;
